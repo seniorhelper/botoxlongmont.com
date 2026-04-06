@@ -14,140 +14,140 @@
 <meta name="twitter:card" content="summary_large_image">
 
 <!-- Favicon -->
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23b5768a'/><text y='72' x='50' text-anchor='middle' font-size='62' font-family='Georgia,serif' fill='white'>R</text></svg>">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%231a2744'/><text y='72' x='50' text-anchor='middle' font-size='62' font-family='Georgia,serif' fill='%23c9a96e'>R</text></svg>">
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 :root {
-  --rose: #b5768a;
-  --rose-light: #d4a0b5;
-  --rose-pale: #f5eaef;
-  --rose-deep: #8a5068;
-  --cream: #fdf8f5;
-  --warm-white: #fff9f6;
-  --sage: #7a9e8e;
-  --sage-light: #a8c5b8;
-  --charcoal: #2d2424;
-  --mid: #5a4a50;
-  --muted: #8a7a80;
+  --navy: #1a2744;
+  --navy-mid: #243358;
+  --navy-light: #2e4070;
+  --navy-pale: #eef1f7;
   --gold: #c9a96e;
-  --gold-light: #e8d5b0;
-  --border: rgba(181,118,138,0.18);
+  --gold-light: #dfc898;
+  --gold-pale: #f8f3ea;
+  --gold-deep: #a8833f;
+  --pearl: #f9f7f4;
+  --white: #ffffff;
+  --slate: #4a5568;
+  --muted: #7a8899;
+  --charcoal: #1e2530;
+  --border: rgba(26,39,68,0.12);
+  --border-gold: rgba(201,169,110,0.3);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
-
 html { scroll-behavior: smooth; }
-
 body {
-  font-family: 'DM Sans', sans-serif;
-  background: var(--cream);
+  font-family: 'Jost', sans-serif;
+  background: var(--pearl);
   color: var(--charcoal);
   font-size: 16px;
   line-height: 1.7;
   overflow-x: hidden;
 }
-
 h1, h2, h3, h4 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 600;
   line-height: 1.2;
 }
 
 /* ─── TOP BAR ─── */
 .topbar {
-  background: var(--rose);
-  color: white;
+  background: var(--navy);
+  color: rgba(255,255,255,0.8);
   text-align: center;
   padding: 10px 20px;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.03em;
+  font-size: 13.5px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
 }
-.topbar a { color: white; text-decoration: none; font-weight: 600; }
-.topbar a:hover { text-decoration: underline; }
+.topbar a { color: var(--gold-light); text-decoration: none; font-weight: 600; }
+.topbar a:hover { color: var(--white); }
+.topbar strong { color: var(--gold-light); }
 
 /* ─── NAV ─── */
 nav {
-  background: var(--warm-white);
+  background: var(--white);
   border-bottom: 1px solid var(--border);
-  padding: 0 24px;
+  padding: 0 28px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
+  height: 72px;
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 20px rgba(181,118,138,0.08);
+  box-shadow: 0 2px 20px rgba(26,39,68,0.06);
 }
-
 .nav-brand {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 22px;
-  font-weight: 600;
-  color: var(--rose-deep);
+  font-weight: 700;
+  color: var(--navy);
   text-decoration: none;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
 }
 .nav-brand span { color: var(--gold); font-style: italic; }
 
 .nav-links { display: flex; gap: 28px; align-items: center; list-style: none; }
 .nav-links a {
   font-size: 13.5px;
-  color: var(--mid);
+  color: var(--slate);
   text-decoration: none;
   font-weight: 500;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
   transition: color 0.2s;
 }
-.nav-links a:hover { color: var(--rose); }
+.nav-links a:hover { color: var(--navy); }
 
 .nav-cta {
-  background: var(--rose);
+  background: var(--navy) !important;
   color: white !important;
-  padding: 9px 20px;
-  border-radius: 50px;
+  padding: 9px 22px !important;
+  border-radius: 4px !important;
   font-size: 13px !important;
   font-weight: 600 !important;
+  letter-spacing: 0.04em !important;
   transition: background 0.2s !important;
 }
-.nav-cta:hover { background: var(--rose-deep) !important; }
+.nav-cta:hover { background: var(--gold-deep) !important; color: white !important; }
 
 .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; border: none; background: none; padding: 4px; }
-.hamburger span { width: 24px; height: 2px; background: var(--rose-deep); border-radius: 2px; transition: all 0.3s; display: block; }
+.hamburger span { width: 24px; height: 2px; background: var(--navy); border-radius: 2px; transition: all 0.3s; display: block; }
 
 .mobile-menu {
   display: none;
   flex-direction: column;
-  background: var(--warm-white);
-  padding: 16px 24px 20px;
+  background: var(--white);
+  padding: 16px 28px 20px;
   border-top: 1px solid var(--border);
   gap: 14px;
 }
 .mobile-menu.open { display: flex; }
 .mobile-menu a {
-  color: var(--mid);
+  color: var(--slate);
   text-decoration: none;
   font-size: 15px;
   font-weight: 500;
   padding: 6px 0;
   border-bottom: 1px solid var(--border);
+  letter-spacing: 0.03em;
 }
 .mobile-menu a:last-child { border-bottom: none; }
 
 /* ─── HERO ─── */
 .hero {
-  background: linear-gradient(135deg, #2d1f26 0%, #4a2c3a 40%, #3d3040 100%);
+  background: linear-gradient(135deg, #0d1624 0%, #1a2744 45%, #1e3060 100%);
   min-height: 92vh;
   display: flex;
   align-items: center;
   position: relative;
   overflow: hidden;
-  padding: 80px 24px;
+  padding: 80px 28px;
 }
 
 .hero::before {
@@ -155,8 +155,20 @@ nav {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 60% 60% at 80% 50%, rgba(181,118,138,0.22) 0%, transparent 70%),
-    radial-gradient(ellipse 40% 80% at 10% 80%, rgba(201,169,110,0.12) 0%, transparent 60%);
+    radial-gradient(ellipse 55% 70% at 85% 40%, rgba(201,169,110,0.14) 0%, transparent 65%),
+    radial-gradient(ellipse 40% 60% at 5% 90%, rgba(201,169,110,0.07) 0%, transparent 60%);
+}
+
+/* Subtle grid texture */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
 }
 
 .hero-particles {
@@ -169,18 +181,18 @@ nav {
   position: absolute;
   border-radius: 50%;
   animation: float linear infinite;
-  opacity: 0.3;
+  opacity: 0.25;
 }
-.particle:nth-child(1)  { width:4px;height:4px;background:var(--rose-light);left:10%;animation-duration:12s;animation-delay:-2s;top:20%;}
-.particle:nth-child(2)  { width:6px;height:6px;background:var(--gold-light);left:25%;animation-duration:18s;animation-delay:-7s;top:60%;}
-.particle:nth-child(3)  { width:3px;height:3px;background:var(--rose-light);left:70%;animation-duration:14s;animation-delay:-3s;top:15%;}
-.particle:nth-child(4)  { width:5px;height:5px;background:var(--gold);left:85%;animation-duration:20s;animation-delay:-9s;top:70%;}
-.particle:nth-child(5)  { width:4px;height:4px;background:var(--sage-light);left:50%;animation-duration:16s;animation-delay:-5s;top:40%;}
-.particle:nth-child(6)  { width:7px;height:7px;background:var(--rose-light);left:40%;animation-duration:22s;animation-delay:-1s;top:80%;}
+.particle:nth-child(1)  { width:3px;height:3px;background:var(--gold-light);left:12%;animation-duration:14s;animation-delay:-3s;top:25%;}
+.particle:nth-child(2)  { width:5px;height:5px;background:var(--gold);left:28%;animation-duration:20s;animation-delay:-8s;top:65%;}
+.particle:nth-child(3)  { width:3px;height:3px;background:var(--gold-light);left:68%;animation-duration:16s;animation-delay:-4s;top:18%;}
+.particle:nth-child(4)  { width:4px;height:4px;background:var(--gold);left:82%;animation-duration:22s;animation-delay:-10s;top:72%;}
+.particle:nth-child(5)  { width:3px;height:3px;background:rgba(255,255,255,0.6);left:48%;animation-duration:18s;animation-delay:-6s;top:42%;}
+.particle:nth-child(6)  { width:5px;height:5px;background:var(--gold-light);left:38%;animation-duration:24s;animation-delay:-2s;top:82%;}
 
 @keyframes float {
-  0% { transform: translateY(0) rotate(0deg); opacity: 0.3; }
-  50% { opacity: 0.6; }
+  0% { transform: translateY(0) rotate(0deg); opacity: 0.25; }
+  50% { opacity: 0.5; }
   100% { transform: translateY(-600px) rotate(360deg); opacity: 0; }
 }
 
@@ -200,71 +212,74 @@ nav {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(181,118,138,0.2);
-  border: 1px solid rgba(181,118,138,0.4);
-  color: var(--rose-light);
-  font-size: 12px;
+  background: rgba(201,169,110,0.15);
+  border: 1px solid rgba(201,169,110,0.35);
+  color: var(--gold-light);
+  font-size: 11.5px;
   font-weight: 600;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  padding: 6px 16px;
-  border-radius: 50px;
-  margin-bottom: 20px;
+  padding: 7px 18px;
+  border-radius: 3px;
+  margin-bottom: 22px;
 }
-.hero-badge::before { content: '★'; color: var(--gold); }
+.hero-badge::before { content: '✦'; color: var(--gold); font-size: 9px; }
 
 .hero h1 {
-  font-size: clamp(38px, 5.5vw, 72px);
+  font-size: clamp(38px, 5.5vw, 70px);
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   line-height: 1.08;
 }
 .hero h1 em {
   font-style: italic;
-  color: var(--rose-light);
+  color: var(--gold-light);
   display: block;
 }
 
 .hero-sub {
   font-size: 17px;
-  color: rgba(255,255,255,0.72);
+  color: rgba(255,255,255,0.65);
   max-width: 520px;
-  margin-bottom: 32px;
-  line-height: 1.65;
+  margin-bottom: 34px;
+  line-height: 1.7;
+  font-weight: 300;
 }
 
 .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
 
 .btn-primary {
-  background: var(--rose);
-  color: white;
+  background: var(--gold);
+  color: var(--navy);
   padding: 14px 30px;
-  border-radius: 50px;
-  font-size: 15px;
-  font-weight: 600;
+  border-radius: 4px;
+  font-size: 14.5px;
+  font-weight: 700;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   gap: 8px;
   transition: all 0.25s;
-  border: 2px solid var(--rose);
+  border: 2px solid var(--gold);
   white-space: nowrap;
+  letter-spacing: 0.03em;
 }
-.btn-primary:hover { background: var(--rose-deep); border-color: var(--rose-deep); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(181,118,138,0.4); }
+.btn-primary:hover { background: var(--gold-light); border-color: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(201,169,110,0.35); }
 
 .btn-outline {
   background: transparent;
   color: white;
   padding: 14px 30px;
-  border-radius: 50px;
-  font-size: 15px;
+  border-radius: 4px;
+  font-size: 14.5px;
   font-weight: 500;
   text-decoration: none;
-  border: 2px solid rgba(255,255,255,0.35);
+  border: 2px solid rgba(255,255,255,0.3);
   transition: all 0.25s;
   white-space: nowrap;
+  letter-spacing: 0.03em;
 }
-.btn-outline:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.6); }
+.btn-outline:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.55); }
 
 .hero-trust {
   display: flex;
@@ -276,29 +291,31 @@ nav {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: rgba(255,255,255,0.65);
+  color: rgba(255,255,255,0.6);
   font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
 }
-.trust-dot { width: 8px; height: 8px; background: var(--gold); border-radius: 50%; flex-shrink: 0; }
+.trust-dot { width: 6px; height: 6px; background: var(--gold); border-radius: 50%; flex-shrink: 0; }
 
 /* Hero Card */
 .hero-card {
-  background: rgba(255,255,255,0.06);
+  background: rgba(255,255,255,0.05);
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 24px;
+  border: 1px solid rgba(201,169,110,0.2);
+  border-radius: 8px;
   padding: 36px 30px;
   animation: slideInRight 0.8s ease 0.3s both;
 }
 @keyframes slideInRight { from { transform: translateX(30px); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
 
 .card-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 22px;
+  font-family: 'Playfair Display', serif;
+  font-size: 21px;
   color: white;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
-.card-sub { font-size: 13px; color: rgba(255,255,255,0.5); margin-bottom: 24px; }
+.card-sub { font-size: 12.5px; color: rgba(255,255,255,0.45); margin-bottom: 26px; letter-spacing: 0.03em; }
 
 .stat-row {
   display: flex;
@@ -306,69 +323,82 @@ nav {
   gap: 14px;
   margin-bottom: 24px;
 }
-.stat-item { display: flex; flex-direction: column; gap: 4px; }
-.stat-label { font-size: 12px; color: rgba(255,255,255,0.5); font-weight: 500; letter-spacing: 0.05em; }
-.stat-bar-wrap { background: rgba(255,255,255,0.1); border-radius: 20px; height: 8px; overflow: hidden; }
+.stat-item { display: flex; flex-direction: column; gap: 5px; }
+.stat-label { font-size: 11.5px; color: rgba(255,255,255,0.5); font-weight: 500; letter-spacing: 0.05em; }
+.stat-bar-wrap { background: rgba(255,255,255,0.08); border-radius: 2px; height: 6px; overflow: hidden; }
 .stat-bar {
   height: 100%;
-  border-radius: 20px;
-  background: linear-gradient(90deg, var(--rose), var(--gold));
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--gold-deep), var(--gold-light));
   width: 0%;
   transition: width 1.4s cubic-bezier(0.25,0.46,0.45,0.94);
 }
-.stat-val { font-size: 13px; color: var(--gold); font-weight: 600; text-align: right; }
+.stat-val { font-size: 12.5px; color: var(--gold-light); font-weight: 600; text-align: right; }
 
 .hero-phone {
   text-align: center;
   margin-top: 20px;
   padding-top: 20px;
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(201,169,110,0.15);
 }
 .hero-phone a {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 26px;
   color: white;
   text-decoration: none;
   font-weight: 600;
   display: block;
+  letter-spacing: 0.02em;
 }
-.hero-phone span { font-size: 12px; color: rgba(255,255,255,0.45); display: block; margin-top: 2px; }
+.hero-phone span { font-size: 11.5px; color: rgba(255,255,255,0.4); display: block; margin-top: 3px; letter-spacing: 0.06em; }
 
 /* ─── SECTIONS ─── */
-.section { padding: 90px 24px; }
-.section-alt { background: var(--warm-white); }
-.section-rose { background: linear-gradient(135deg, var(--rose-pale) 0%, #f0e4ec 100%); }
+.section { padding: 90px 28px; }
+.section-alt { background: var(--white); }
+.section-navy { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%); }
+.section-gold { background: linear-gradient(135deg, var(--gold-pale) 0%, #f2ece0 100%); }
 
 .container { max-width: 1080px; margin: 0 auto; }
 
 .section-eyebrow {
-  font-size: 11px;
+  font-size: 10.5px;
   font-weight: 700;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--rose);
+  color: var(--gold-deep);
   margin-bottom: 10px;
+  font-family: 'Jost', sans-serif;
 }
 
 .section-title {
   font-size: clamp(30px, 4vw, 52px);
-  color: var(--charcoal);
+  color: var(--navy);
   margin-bottom: 16px;
 }
-.section-title em { font-style: italic; color: var(--rose); }
+.section-title em { font-style: italic; color: var(--gold-deep); }
 
 .section-lead {
   font-size: 17px;
-  color: var(--mid);
+  color: var(--slate);
   max-width: 620px;
-  line-height: 1.75;
-  margin-bottom: 48px;
+  line-height: 1.8;
+  margin-bottom: 50px;
+  font-weight: 300;
 }
 
 /* ─── STATS STRIP ─── */
 .stats-strip {
-  background: linear-gradient(135deg, var(--rose-deep), var(--rose), #a06080);
-  padding: 50px 24px;
+  background: linear-gradient(135deg, var(--navy) 0%, #0f1d38 100%);
+  padding: 56px 28px;
+  position: relative;
+  overflow: hidden;
+}
+.stats-strip::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 50% 100% at 80% 50%, rgba(201,169,110,0.08) 0%, transparent 70%);
 }
 .stats-grid {
   max-width: 1000px;
@@ -377,86 +407,88 @@ nav {
   grid-template-columns: repeat(4,1fr);
   gap: 24px;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 .stat-block {}
 .stat-number {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 52px;
-  color: white;
-  font-weight: 300;
+  color: var(--gold-light);
+  font-weight: 400;
   line-height: 1;
   display: block;
 }
 .stat-number span { font-size: 30px; }
-.stat-desc { font-size: 13px; color: rgba(255,255,255,0.72); margin-top: 6px; line-height: 1.4; }
+.stat-desc { font-size: 12.5px; color: rgba(255,255,255,0.55); margin-top: 8px; line-height: 1.5; letter-spacing: 0.02em; }
 
 /* ─── WHY SECTION ─── */
 .why-grid {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  gap: 28px;
+  gap: 24px;
   margin-top: 50px;
 }
 .why-card {
-  background: white;
-  border-radius: 20px;
+  background: var(--pearl);
+  border-radius: 8px;
   padding: 32px 28px;
   border: 1px solid var(--border);
   position: relative;
   overflow: hidden;
   transition: transform 0.25s, box-shadow 0.25s;
 }
-.why-card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(181,118,138,0.15); }
+.why-card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(26,39,68,0.1); }
 .why-card::after {
   content: '';
   position: absolute;
   bottom: 0; left: 0; right: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--rose), var(--gold));
+  background: linear-gradient(90deg, var(--navy), var(--gold));
   transform: scaleX(0);
   transition: transform 0.3s;
   transform-origin: left;
 }
 .why-card:hover::after { transform: scaleX(1); }
 .why-icon {
-  width: 52px; height: 52px;
-  background: var(--rose-pale);
-  border-radius: 14px;
+  width: 50px; height: 50px;
+  background: var(--navy-pale);
+  border-radius: 8px;
   display: flex; align-items: center; justify-content: center;
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 18px;
 }
-.why-card h3 { font-size: 20px; margin-bottom: 10px; color: var(--charcoal); }
-.why-card p { font-size: 15px; color: var(--mid); line-height: 1.65; }
+.why-card h3 { font-size: 19px; margin-bottom: 10px; color: var(--navy); }
+.why-card p { font-size: 14.5px; color: var(--slate); line-height: 1.7; font-weight: 300; }
 
 /* ─── SERVICES SECTION ─── */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  gap: 20px;
+  gap: 18px;
   margin-top: 48px;
 }
 .service-card {
-  background: white;
-  border-radius: 18px;
-  padding: 28px 28px;
+  background: var(--pearl);
+  border-radius: 8px;
+  padding: 26px 26px;
   border: 1px solid var(--border);
   display: flex;
-  gap: 20px;
+  gap: 18px;
   align-items: flex-start;
   transition: all 0.25s;
   cursor: default;
 }
-.service-card:hover { box-shadow: 0 8px 32px rgba(181,118,138,0.12); border-color: var(--rose-light); }
+.service-card:hover { box-shadow: 0 8px 32px rgba(26,39,68,0.1); border-color: var(--gold); }
 .svc-icon {
-  width: 46px; height: 46px; flex-shrink: 0;
-  background: linear-gradient(135deg, var(--rose-pale), #f0d8e4);
-  border-radius: 12px;
+  width: 44px; height: 44px; flex-shrink: 0;
+  background: var(--navy-pale);
+  border-radius: 8px;
   display: flex; align-items: center; justify-content: center;
-  font-size: 20px;
+  font-size: 19px;
 }
-.svc-body h3 { font-size: 18px; margin-bottom: 5px; }
-.svc-body p { font-size: 14px; color: var(--mid); line-height: 1.55; }
+.svc-body h3 { font-size: 17.5px; margin-bottom: 5px; color: var(--navy); }
+.svc-body p { font-size: 13.5px; color: var(--slate); line-height: 1.6; font-weight: 300; }
 
 /* ─── FUNNEL / VALUE PROP ─── */
 .funnel-steps {
@@ -473,8 +505,8 @@ nav {
   left: 28px;
   top: 40px;
   bottom: 40px;
-  width: 2px;
-  background: linear-gradient(to bottom, var(--rose-light), var(--sage-light));
+  width: 1px;
+  background: linear-gradient(to bottom, var(--gold), rgba(201,169,110,0.15));
 }
 .funnel-step {
   display: flex;
@@ -485,55 +517,56 @@ nav {
 }
 .step-num {
   width: 56px; height: 56px; flex-shrink: 0;
-  background: white;
-  border: 2px solid var(--rose-light);
+  background: var(--navy);
+  border: 1px solid rgba(201,169,110,0.3);
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 22px;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
   font-weight: 600;
-  color: var(--rose-deep);
+  color: var(--gold-light);
   position: relative;
   z-index: 1;
 }
-.step-body h3 { font-size: 21px; margin-bottom: 8px; margin-top: 10px; }
-.step-body p { font-size: 15px; color: var(--mid); line-height: 1.65; }
+.step-body h3 { font-size: 20px; margin-bottom: 8px; margin-top: 10px; color: var(--navy); }
+.step-body p { font-size: 15px; color: var(--slate); line-height: 1.7; font-weight: 300; }
 
 /* ─── CHART SECTION ─── */
 .chart-area {
-  background: white;
-  border-radius: 24px;
+  background: var(--white);
+  border-radius: 8px;
   padding: 40px;
   border: 1px solid var(--border);
   margin-top: 48px;
 }
-.chart-area h3 { font-size: 24px; margin-bottom: 6px; }
-.chart-note { font-size: 13px; color: var(--muted); margin-bottom: 32px; }
+.chart-area h3 { font-size: 24px; margin-bottom: 6px; color: var(--navy); }
+.chart-note { font-size: 12.5px; color: var(--muted); margin-bottom: 32px; letter-spacing: 0.02em; }
 
 .bar-chart { display: flex; flex-direction: column; gap: 16px; }
 .bar-row { display: flex; align-items: center; gap: 14px; }
-.bar-label { font-size: 13px; color: var(--mid); width: 170px; flex-shrink: 0; text-align: right; font-weight: 500; }
-.bar-track { flex: 1; background: var(--rose-pale); border-radius: 20px; height: 36px; overflow: hidden; }
+.bar-label { font-size: 13px; color: var(--slate); width: 170px; flex-shrink: 0; text-align: right; font-weight: 500; }
+.bar-track { flex: 1; background: var(--navy-pale); border-radius: 3px; height: 36px; overflow: hidden; }
 .bar-fill {
   height: 100%;
-  border-radius: 20px;
+  border-radius: 3px;
   display: flex;
   align-items: center;
   padding-left: 14px;
-  font-size: 13px;
+  font-size: 12.5px;
   font-weight: 700;
   color: white;
   width: 0%;
   transition: width 1.6s cubic-bezier(0.25,0.46,0.45,0.94);
   white-space: nowrap;
+  letter-spacing: 0.02em;
 }
-.bar-fill.rose { background: linear-gradient(90deg, var(--rose), var(--rose-light)); }
-.bar-fill.sage { background: linear-gradient(90deg, var(--sage), var(--sage-light)); }
-.bar-fill.gold { background: linear-gradient(90deg, #b8904a, var(--gold)); }
-.bar-fill.light { background: linear-gradient(90deg, #c09ab0, var(--rose-light)); }
+.bar-fill.rose { background: linear-gradient(90deg, var(--navy), var(--navy-light)); }
+.bar-fill.sage { background: linear-gradient(90deg, #2a6049, #3d8a6a); }
+.bar-fill.gold { background: linear-gradient(90deg, var(--gold-deep), var(--gold)); }
+.bar-fill.light { background: linear-gradient(90deg, #4a5568, #7a8899); }
 
-.chart-source { font-size: 12px; color: var(--muted); margin-top: 20px; }
-.chart-source a { color: var(--rose); text-decoration: none; }
+.chart-source { font-size: 11.5px; color: var(--muted); margin-top: 20px; }
+.chart-source a { color: var(--gold-deep); text-decoration: none; }
 .chart-source a:hover { text-decoration: underline; }
 
 /* ─── TESTIMONIALS ─── */
@@ -544,26 +577,26 @@ nav {
   margin-top: 48px;
 }
 .testi-card {
-  background: white;
-  border-radius: 20px;
+  background: var(--white);
+  border-radius: 8px;
   padding: 28px 24px;
   border: 1px solid var(--border);
   position: relative;
 }
 .testi-card::before {
   content: '"';
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 80px;
-  color: var(--rose-pale);
+  color: var(--navy-pale);
   position: absolute;
   top: 10px;
   left: 18px;
   line-height: 1;
 }
 .stars { color: var(--gold); font-size: 14px; letter-spacing: 2px; margin-bottom: 12px; }
-.testi-text { font-size: 14.5px; color: var(--mid); line-height: 1.65; margin-bottom: 18px; padding-top: 20px; }
-.testi-name { font-size: 13px; font-weight: 600; color: var(--charcoal); }
-.testi-city { font-size: 12px; color: var(--muted); }
+.testi-text { font-size: 14px; color: var(--slate); line-height: 1.7; margin-bottom: 18px; padding-top: 20px; font-weight: 300; }
+.testi-name { font-size: 13px; font-weight: 600; color: var(--navy); letter-spacing: 0.03em; }
+.testi-city { font-size: 11.5px; color: var(--muted); letter-spacing: 0.03em; }
 
 /* ─── FAQ ─── */
 .faq-list {
@@ -571,16 +604,16 @@ nav {
   margin: 48px auto 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 .faq-item {
-  background: white;
-  border-radius: 14px;
+  background: var(--white);
+  border-radius: 6px;
   border: 1px solid var(--border);
   overflow: hidden;
   transition: box-shadow 0.2s;
 }
-.faq-item:hover { box-shadow: 0 4px 20px rgba(181,118,138,0.1); }
+.faq-item:hover { box-shadow: 0 4px 20px rgba(26,39,68,0.08); }
 .faq-q {
   display: flex;
   justify-content: space-between;
@@ -588,39 +621,42 @@ nav {
   padding: 18px 22px;
   cursor: pointer;
   font-size: 16px;
-  font-weight: 600;
-  color: var(--charcoal);
+  font-weight: 500;
+  color: var(--navy);
   user-select: none;
   gap: 14px;
 }
-.faq-q span { flex: 1; font-family: 'DM Sans', sans-serif; font-size: 15.5px; }
+.faq-q span { flex: 1; font-family: 'Jost', sans-serif; font-size: 15px; }
 .faq-icon {
   width: 28px; height: 28px; flex-shrink: 0;
-  background: var(--rose-pale);
+  background: var(--navy-pale);
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
   font-size: 18px;
-  color: var(--rose);
+  color: var(--navy);
   font-weight: 300;
   transition: transform 0.3s, background 0.2s;
   line-height: 1;
 }
-.faq-item.open .faq-icon { transform: rotate(45deg); background: var(--rose); color: white; }
+.faq-item.open .faq-icon { transform: rotate(45deg); background: var(--navy); color: white; }
 .faq-a {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s cubic-bezier(0.25,0.46,0.45,0.94), padding 0.3s;
   font-size: 14.5px;
-  color: var(--mid);
-  line-height: 1.7;
+  color: var(--slate);
+  line-height: 1.75;
   padding: 0 22px;
+  font-weight: 300;
 }
 .faq-item.open .faq-a { max-height: 400px; padding: 0 22px 20px; }
+.faq-a a { color: var(--gold-deep); text-decoration: none; }
+.faq-a a:hover { text-decoration: underline; }
 
 /* ─── FORM SECTION ─── */
 .form-section {
-  background: linear-gradient(135deg, #2d1f26 0%, #4a2c3a 80%);
-  padding: 90px 24px;
+  background: linear-gradient(135deg, #0d1624 0%, #1a2744 80%);
+  padding: 90px 28px;
   position: relative;
   overflow: hidden;
 }
@@ -628,7 +664,17 @@ nav {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 70% 70% at 30% 50%, rgba(181,118,138,0.15) 0%, transparent 70%);
+  background: radial-gradient(ellipse 60% 80% at 25% 50%, rgba(201,169,110,0.08) 0%, transparent 70%);
+}
+.form-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.012) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.012) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
 }
 
 .form-inner {
@@ -642,105 +688,111 @@ nav {
   z-index: 2;
 }
 
-.form-copy .section-eyebrow { color: var(--rose-light); }
+.form-copy .section-eyebrow { color: var(--gold-light); }
 .form-copy .section-title { color: white; font-size: clamp(28px, 4vw, 48px); }
-.form-copy .section-lead { color: rgba(255,255,255,0.6); margin-bottom: 32px; }
+.form-copy .section-title em { color: var(--gold-light); }
+.form-copy .section-lead { color: rgba(255,255,255,0.55); margin-bottom: 32px; }
 
 .form-perks { display: flex; flex-direction: column; gap: 12px; }
 .perk-item { display: flex; align-items: center; gap: 12px; }
 .perk-check {
   width: 22px; height: 22px; flex-shrink: 0;
-  background: var(--rose);
+  background: rgba(201,169,110,0.2);
+  border: 1px solid rgba(201,169,110,0.4);
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  font-size: 11px;
-  color: white;
+  font-size: 10px;
+  color: var(--gold-light);
+  font-weight: 700;
 }
-.perk-text { font-size: 14px; color: rgba(255,255,255,0.72); }
+.perk-text { font-size: 14px; color: rgba(255,255,255,0.65); font-weight: 300; }
 
 .form-card {
-  background: white;
-  border-radius: 24px;
+  background: var(--white);
+  border-radius: 8px;
   padding: 36px 32px;
+  border: 1px solid rgba(201,169,110,0.15);
 }
 .form-card h3 {
   font-size: 24px;
-  color: var(--charcoal);
+  color: var(--navy);
   margin-bottom: 4px;
 }
-.form-card p { font-size: 13px; color: var(--muted); margin-bottom: 24px; }
+.form-card p { font-size: 13px; color: var(--muted); margin-bottom: 24px; font-weight: 300; }
 
 .form-group { margin-bottom: 14px; }
-.form-group label { display: block; font-size: 12px; font-weight: 600; color: var(--mid); margin-bottom: 5px; letter-spacing: 0.05em; }
+.form-group label { display: block; font-size: 11px; font-weight: 700; color: var(--navy); margin-bottom: 5px; letter-spacing: 0.08em; }
 .form-group input,
 .form-group textarea,
 .form-group select {
   width: 100%;
   padding: 11px 14px;
-  border: 1.5px solid #e8d8e0;
-  border-radius: 10px;
+  border: 1.5px solid rgba(26,39,68,0.15);
+  border-radius: 4px;
   font-size: 15px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
   color: var(--charcoal);
-  background: var(--cream);
+  background: var(--pearl);
   transition: border-color 0.2s;
   outline: none;
 }
 .form-group input:focus,
 .form-group textarea:focus,
-.form-group select:focus { border-color: var(--rose); background: white; }
+.form-group select:focus { border-color: var(--navy); background: white; }
 .form-group textarea { resize: vertical; min-height: 80px; }
 
 .form-submit {
   width: 100%;
-  background: var(--rose);
+  background: var(--navy);
   color: white;
   border: none;
   padding: 14px;
-  border-radius: 50px;
-  font-size: 15px;
+  border-radius: 4px;
+  font-size: 14.5px;
   font-weight: 700;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
   cursor: pointer;
   transition: all 0.25s;
   margin-top: 6px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.05em;
 }
-.form-submit:hover { background: var(--rose-deep); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(181,118,138,0.4); }
+.form-submit:hover { background: var(--gold-deep); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(26,39,68,0.25); }
 .form-submit:disabled { opacity: 0.65; cursor: not-allowed; transform: none; }
 
 #form-msg { font-size: 14px; text-align: center; margin-top: 10px; min-height: 20px; }
-.msg-success { color: var(--sage); font-weight: 600; }
+.msg-success { color: #2a6049; font-weight: 600; }
 .msg-error { color: #c0392b; }
 
 /* ─── CTA STRIP ─── */
 .cta-strip {
-  background: linear-gradient(90deg, var(--rose-pale) 0%, #f0e8f0 100%);
-  padding: 60px 24px;
+  background: var(--gold-pale);
+  border-top: 1px solid var(--border-gold);
+  padding: 64px 28px;
   text-align: center;
 }
-.cta-strip h2 { font-size: clamp(26px, 3.5vw, 44px); margin-bottom: 10px; }
-.cta-strip p { font-size: 16px; color: var(--mid); margin-bottom: 28px; max-width: 520px; margin-left: auto; margin-right: auto; }
+.cta-strip h2 { font-size: clamp(26px, 3.5vw, 44px); margin-bottom: 10px; color: var(--navy); }
+.cta-strip p { font-size: 16px; color: var(--slate); margin-bottom: 30px; max-width: 520px; margin-left: auto; margin-right: auto; font-weight: 300; }
 .cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 
 .btn-dark {
-  background: var(--charcoal);
+  background: var(--navy);
   color: white;
   padding: 14px 30px;
-  border-radius: 50px;
-  font-size: 15px;
+  border-radius: 4px;
+  font-size: 14.5px;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.25s;
   white-space: nowrap;
+  letter-spacing: 0.03em;
 }
-.btn-dark:hover { background: #1a1015; transform: translateY(-2px); }
+.btn-dark:hover { background: var(--charcoal); transform: translateY(-2px); }
 
 /* ─── FOOTER ─── */
 footer {
   background: var(--charcoal);
-  color: rgba(255,255,255,0.6);
-  padding: 52px 24px 28px;
+  color: rgba(255,255,255,0.55);
+  padding: 56px 28px 28px;
 }
 .footer-inner {
   max-width: 1080px;
@@ -751,42 +803,43 @@ footer {
   margin-bottom: 36px;
 }
 .footer-brand-name {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 24px;
   color: white;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
-.footer-brand-name em { color: var(--rose-light); font-style: italic; }
-.footer-desc { font-size: 13.5px; line-height: 1.7; max-width: 280px; }
-.footer-phone { color: var(--rose-light); font-size: 18px; font-weight: 600; text-decoration: none; display: block; margin-top: 14px; }
+.footer-brand-name em { color: var(--gold-light); font-style: italic; }
+.footer-desc { font-size: 13.5px; line-height: 1.75; max-width: 280px; font-weight: 300; }
+.footer-phone { color: var(--gold-light); font-size: 18px; font-weight: 600; text-decoration: none; display: block; margin-top: 16px; letter-spacing: 0.02em; }
 
-.footer-col h4 { color: white; font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 16px; }
+.footer-col h4 { color: rgba(255,255,255,0.9); font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 16px; }
 .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
-.footer-col ul li a { color: rgba(255,255,255,0.55); text-decoration: none; font-size: 13.5px; transition: color 0.2s; }
-.footer-col ul li a:hover { color: var(--rose-light); }
+.footer-col ul li a { color: rgba(255,255,255,0.45); text-decoration: none; font-size: 13.5px; transition: color 0.2s; font-weight: 300; }
+.footer-col ul li a:hover { color: var(--gold-light); }
 
 .footer-bottom {
   max-width: 1080px;
   margin: 0 auto;
   padding-top: 24px;
-  border-top: 1px solid rgba(255,255,255,0.08);
+  border-top: 1px solid rgba(255,255,255,0.07);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 12.5px;
+  font-size: 12px;
   flex-wrap: wrap;
   gap: 10px;
+  letter-spacing: 0.02em;
 }
-.footer-bottom a { color: rgba(255,255,255,0.45); text-decoration: none; }
-.footer-bottom a:hover { color: var(--rose-light); }
+.footer-bottom a { color: rgba(255,255,255,0.35); text-decoration: none; }
+.footer-bottom a:hover { color: var(--gold-light); }
 
 /* ─── MODAL ─── */
 .modal-overlay {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.55);
+  background: rgba(0,0,0,0.6);
   z-index: 999;
   align-items: center;
   justify-content: center;
@@ -795,30 +848,60 @@ footer {
 .modal-overlay.show { display: flex; }
 .modal-box {
   background: white;
-  border-radius: 24px;
+  border-radius: 8px;
   padding: 48px 40px;
   max-width: 440px;
   width: 100%;
   text-align: center;
   animation: popIn 0.3s ease;
+  border-top: 4px solid var(--gold);
 }
 @keyframes popIn { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
-.modal-icon { font-size: 54px; margin-bottom: 16px; }
-.modal-box h2 { font-size: 28px; color: var(--charcoal); margin-bottom: 10px; }
-.modal-box p { font-size: 15px; color: var(--mid); line-height: 1.65; margin-bottom: 24px; }
+.modal-icon { font-size: 48px; margin-bottom: 16px; }
+.modal-box h2 { font-size: 28px; color: var(--navy); margin-bottom: 12px; }
+.modal-box p { font-size: 15px; color: var(--slate); line-height: 1.7; font-weight: 300; }
 .modal-close {
-  background: var(--rose);
+  background: var(--navy);
   color: white;
   border: none;
-  padding: 12px 32px;
-  border-radius: 50px;
-  font-size: 15px;
+  padding: 12px 36px;
+  border-radius: 4px;
+  font-size: 14.5px;
   font-weight: 600;
   cursor: pointer;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
   transition: background 0.2s;
+  margin-top: 24px;
+  letter-spacing: 0.04em;
 }
-.modal-close:hover { background: var(--rose-deep); }
+.modal-close:hover { background: var(--gold-deep); }
+
+/* ─── DATA BLOCKS ─── */
+.data-blocks {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+.data-block {
+  border-radius: 8px;
+  padding: 28px 24px;
+  text-align: center;
+  border: 1px solid var(--border);
+}
+.data-block.navy-pale { background: var(--navy-pale); }
+.data-block.sage-pale { background: #edf4f0; }
+.data-block.gold-pale { background: var(--gold-pale); }
+.data-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1;
+}
+.data-num.navy { color: var(--navy); }
+.data-num.sage { color: #2a6049; }
+.data-num.gold { color: var(--gold-deep); }
+.data-desc { font-size: 13.5px; color: var(--slate); margin-top: 8px; line-height: 1.55; font-weight: 300; }
 
 /* ─── RESPONSIVE ─── */
 @media (max-width: 900px) {
@@ -833,8 +916,8 @@ footer {
   .nav-links { display: none; }
   .hamburger { display: flex; }
   .bar-label { width: 120px; font-size: 12px; }
+  .data-blocks { grid-template-columns: 1fr; }
 }
-
 @media (max-width: 600px) {
   .hero { min-height: auto; padding: 60px 20px; }
   .section { padding: 64px 20px; }
@@ -847,15 +930,25 @@ footer {
   .form-card { padding: 28px 20px; }
   .footer-bottom { flex-direction: column; text-align: center; }
   .bar-label { width: 100px; font-size: 11px; }
+  .data-blocks { grid-template-columns: 1fr; }
 }
 
 /* ─── SCROLL ANIMATIONS ─── */
 .fade-up {
   opacity: 0;
   transform: translateY(24px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition: opacity 0.65s ease, transform 0.65s ease;
 }
 .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+/* ─── DIVIDER ─── */
+.gold-rule {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin: 0;
+  opacity: 0.4;
+}
 </style>
 </head>
 <body>
@@ -945,6 +1038,8 @@ footer {
   </div>
 </section>
 
+<hr class="gold-rule">
+
 <!-- STATS STRIP -->
 <div class="stats-strip">
   <div class="stats-grid">
@@ -978,17 +1073,17 @@ footer {
     <div class="why-grid">
       <div class="why-card fade-up">
         <div class="why-icon">⏱️</div>
-        <h3>Fast & Minimal Downtime</h3>
+        <h3>Fast &amp; Minimal Downtime</h3>
         <p>A Botox treatment typically takes 15 to 30 minutes. Most clients return to normal activities the same day. No surgery. No recovery week. Just refreshed results.</p>
       </div>
       <div class="why-card fade-up">
         <div class="why-icon">🎯</div>
-        <h3>Precise & Predictable</h3>
+        <h3>Precise &amp; Predictable</h3>
         <p>Unlike some treatments, Botox has decades of clinical data behind it. With a skilled injector, results are consistent and controlled. You know what you're getting.</p>
       </div>
       <div class="why-card fade-up">
         <div class="why-icon">🔬</div>
-        <h3>FDA-Approved & Proven</h3>
+        <h3>FDA-Approved &amp; Proven</h3>
         <p>Botox has been FDA-approved for cosmetic use since 2002. It's one of the most thoroughly studied aesthetic treatments in the world. Safety and efficacy are well-established.</p>
       </div>
       <div class="why-card fade-up">
@@ -1011,7 +1106,7 @@ footer {
 </section>
 
 <!-- SALES FUNNEL: VALUE WALK -->
-<section class="section section-rose">
+<section class="section section-gold">
   <div class="container">
     <div class="section-eyebrow fade-up" style="text-align:center;">Your Journey to Looking Refreshed</div>
     <h2 class="section-title fade-up" style="text-align:center;">What Happens <em>When You Choose Rewind</em></h2>
@@ -1047,7 +1142,7 @@ footer {
       <div class="funnel-step fade-up">
         <div class="step-num">5</div>
         <div class="step-body">
-          <h3>Ongoing Support & Long-Term Partnership</h3>
+          <h3>Ongoing Support &amp; Long-Term Partnership</h3>
           <p>Rewind clients aren't one-and-done. Jessica checks in, answers questions, and builds long-term plans. Many clients have been coming back for years because the relationship and the results keep them returning with confidence.</p>
         </div>
       </div>
@@ -1074,7 +1169,7 @@ footer {
       <div class="service-card fade-up">
         <div class="svc-icon">🌀</div>
         <div class="svc-body">
-          <h3>Dermal & Lip Fillers</h3>
+          <h3>Dermal &amp; Lip Fillers</h3>
           <p>Restore lost volume and define your lips with hyaluronic acid-based fillers. Subtle enhancement or dramatic plumping — your choice.</p>
         </div>
       </div>
@@ -1082,14 +1177,14 @@ footer {
         <div class="svc-icon">🩸</div>
         <div class="svc-body">
           <h3>PRP Therapy</h3>
-          <p>Platelet-rich plasma treatments harness your body's own healing factors to rejuvenate skin naturally. A cutting-edge option for skin quality and texture.</p>
+          <p>Platelet-rich plasma therapy uses your own biology to stimulate collagen, improve skin texture, and promote a naturally youthful appearance without foreign substances.</p>
         </div>
       </div>
       <div class="service-card fade-up">
         <div class="svc-icon">⚡</div>
         <div class="svc-body">
           <h3>Fibroblast Skin Tightening</h3>
-          <p>A non-surgical alternative to facelifts. Stimulates collagen production for tighter, smoother skin with no downtime of a surgical procedure.</p>
+          <p>A non-surgical alternative to blepharoplasty and other lifting procedures. Uses plasma energy to tighten loose skin around the eyes, neck, and jawline.</p>
         </div>
       </div>
       <div class="service-card fade-up">
@@ -1102,7 +1197,7 @@ footer {
       <div class="service-card fade-up">
         <div class="svc-icon">🧪</div>
         <div class="svc-body">
-          <h3>Chemical Peels & Dermaplaning</h3>
+          <h3>Chemical Peels &amp; Dermaplaning</h3>
           <p>Resurface and renew. Chemical peels remove dead skin layers while dermaplaning smooths texture and removes fine facial hair for glowing skin.</p>
         </div>
       </div>
@@ -1116,7 +1211,7 @@ footer {
       <div class="service-card fade-up">
         <div class="svc-icon">🌿</div>
         <div class="svc-body">
-          <h3>Facials, Brows, Lash & Waxing</h3>
+          <h3>Facials, Brows, Lash &amp; Waxing</h3>
           <p>Complete your aesthetic routine under one roof. From hydrating facials to precise brow shaping, Rewind handles your full beauty maintenance needs.</p>
         </div>
       </div>
@@ -1157,46 +1252,46 @@ footer {
       <p class="chart-source">Source: <a href="https://www.plasticsurgery.org/news/plastic-surgery-statistics" target="_blank" rel="noopener noreferrer">American Society of Plastic Surgeons — National Plastic Surgery Statistics</a></p>
     </div>
 
-    <div style="margin-top:36px; display:grid; grid-template-columns: repeat(3,1fr); gap:20px;" class="fade-up">
-      <div style="background:var(--rose-pale);border-radius:18px;padding:28px 24px;text-align:center;">
-        <div style="font-family:'Cormorant Garamond',serif;font-size:42px;color:var(--rose-deep);font-weight:600;">94%</div>
-        <p style="font-size:14px;color:var(--mid);margin-top:6px;line-height:1.5;">of patients report satisfaction with Botox outcomes</p>
+    <div class="data-blocks fade-up">
+      <div class="data-block navy-pale">
+        <div class="data-num navy">94%</div>
+        <p class="data-desc">of patients report satisfaction with Botox outcomes</p>
       </div>
-      <div style="background:#edf4f0;border-radius:18px;padding:28px 24px;text-align:center;">
-        <div style="font-family:'Cormorant Garamond',serif;font-size:42px;color:var(--sage);font-weight:600;">3–6</div>
-        <p style="font-size:14px;color:var(--mid);margin-top:6px;line-height:1.5;">months of results from a single Botox treatment session</p>
+      <div class="data-block sage-pale">
+        <div class="data-num sage">3–6</div>
+        <p class="data-desc">months of results from a single Botox treatment session</p>
       </div>
-      <div style="background:#fdf5e8;border-radius:18px;padding:28px 24px;text-align:center;">
-        <div style="font-family:'Cormorant Garamond',serif;font-size:42px;color:var(--gold);font-weight:600;">2002</div>
-        <p style="font-size:14px;color:var(--mid);margin-top:6px;line-height:1.5;">Year Botox® received FDA cosmetic approval — 20+ years of proven safety</p>
+      <div class="data-block gold-pale">
+        <div class="data-num gold">2002</div>
+        <p class="data-desc">Year Botox® received FDA cosmetic approval — 20+ years of proven safety</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- TESTIMONIALS -->
-<section class="section section-rose">
+<section class="section section-navy" style="padding: 90px 28px;">
   <div class="container">
-    <div class="section-eyebrow fade-up" style="text-align:center;">Real Clients, Real Results</div>
-    <h2 class="section-title fade-up" style="text-align:center;">What Longmont Clients <em>Say About Rewind</em></h2>
-    <div class="testi-grid">
-      <div class="testi-card fade-up">
+    <div class="section-eyebrow fade-up" style="text-align:center; color: var(--gold-light);">Real Clients, Real Results</div>
+    <h2 class="section-title fade-up" style="text-align:center; color: white;">What Longmont Clients <em style="color: var(--gold-light);">Say About Rewind</em></h2>
+    <div class="testi-grid" style="margin-top: 48px;">
+      <div class="testi-card fade-up" style="background: rgba(255,255,255,0.06); border-color: rgba(201,169,110,0.15);">
         <div class="stars">★★★★★</div>
-        <p class="testi-text">I was nervous going in for the first time. Jessica made me feel completely at ease. She explained exactly what she was doing and why. The results were so natural — I looked refreshed, not frozen. I'll never go anywhere else.</p>
-        <div class="testi-name">Sarah M.</div>
-        <div class="testi-city">Longmont, CO</div>
+        <p class="testi-text" style="color: rgba(255,255,255,0.65);">I was nervous going in for the first time. Jessica made me feel completely at ease. She explained exactly what she was doing and why. The results were so natural — I looked refreshed, not frozen. I'll never go anywhere else.</p>
+        <div class="testi-name" style="color: white;">Sarah M.</div>
+        <div class="testi-city" style="color: rgba(255,255,255,0.4);">Longmont, CO</div>
       </div>
-      <div class="testi-card fade-up">
+      <div class="testi-card fade-up" style="background: rgba(255,255,255,0.06); border-color: rgba(201,169,110,0.15);">
         <div class="stars">★★★★★</div>
-        <p class="testi-text">I've tried Botox at other places in Boulder County. None of them compare. Jessica has a real eye for what looks natural. The difference in quality is obvious. My forehead looks smooth but I can still make full expressions.</p>
-        <div class="testi-name">Michelle T.</div>
-        <div class="testi-city">Boulder, CO</div>
+        <p class="testi-text" style="color: rgba(255,255,255,0.65);">I've tried Botox at other places in Boulder County. None of them compare. Jessica has a real eye for what looks natural. The difference in quality is obvious. My forehead looks smooth but I can still make full expressions.</p>
+        <div class="testi-name" style="color: white;">Michelle T.</div>
+        <div class="testi-city" style="color: rgba(255,255,255,0.4);">Boulder, CO</div>
       </div>
-      <div class="testi-card fade-up">
+      <div class="testi-card fade-up" style="background: rgba(255,255,255,0.06); border-color: rgba(201,169,110,0.15);">
         <div class="stars">★★★★★</div>
-        <p class="testi-text">Been coming to Rewind for lip fillers and Botox for two years. The care here is genuine. Jessica remembers everything about your treatment history. It's not like a factory — it's personal. Best med spa in Northern Colorado.</p>
-        <div class="testi-name">Kristin R.</div>
-        <div class="testi-city">Frederick, CO</div>
+        <p class="testi-text" style="color: rgba(255,255,255,0.65);">Been coming to Rewind for lip fillers and Botox for two years. The care here is genuine. Jessica remembers everything about your treatment history. It's not like a factory — it's personal. Best med spa in Northern Colorado.</p>
+        <div class="testi-name" style="color: white;">Kristin R.</div>
+        <div class="testi-city" style="color: rgba(255,255,255,0.4);">Frederick, CO</div>
       </div>
     </div>
   </div>
@@ -1207,7 +1302,7 @@ footer {
   <div class="container">
     <div class="section-eyebrow fade-up" style="text-align:center;">Frequently Asked Questions</div>
     <h2 class="section-title fade-up" style="text-align:center;">Everything You Want to Know About <em>Botox in Longmont</em></h2>
-    <p style="text-align:center;color:var(--mid);font-size:16px;max-width:560px;margin:0 auto 16px;" class="fade-up">Straightforward answers. No fluff.</p>
+    <p style="text-align:center;color:var(--muted);font-size:16px;max-width:560px;margin:0 auto 16px;font-weight:300;" class="fade-up">Straightforward answers. No fluff.</p>
 
     <div class="faq-list">
 
@@ -1328,7 +1423,7 @@ footer {
           <span>Does Rewind Med Spa serve clients outside of Longmont, CO?</span>
           <div class="faq-icon">+</div>
         </div>
-        <div class="faq-a">Yes. Rewind Med Spa regularly serves clients from throughout Boulder County, including Boulder, Erie, Lafayette, Firestone, Frederick, and surrounding areas. For those looking for <a href="https://www.rewindthehandsoftime.com/aesthetic-services/botox/" target="_blank" rel="noopener" style="color:var(--rose);">Boulder County Botox</a> with a provider who truly knows the community, Rewind is the trusted choice. The clinic is conveniently located in Longmont with easy access from across Northern Colorado.</div>
+        <div class="faq-a">Yes. Rewind Med Spa regularly serves clients from throughout Boulder County, including Boulder, Erie, Lafayette, Firestone, Frederick, and surrounding areas. For those looking for <a href="https://www.rewindthehandsoftime.com/aesthetic-services/botox/" target="_blank" rel="noopener">Boulder County Botox</a> with a provider who truly knows the community, Rewind is the trusted choice. The clinic is conveniently located in Longmont with easy access from across Northern Colorado.</div>
       </div>
 
     </div>
@@ -1346,8 +1441,8 @@ footer {
         <div class="perk-item"><div class="perk-check">✓</div><div class="perk-text">Free consultation — $0 commitment</div></div>
         <div class="perk-item"><div class="perk-check">✓</div><div class="perk-text">Board-certified RN with 20+ years experience</div></div>
         <div class="perk-item"><div class="perk-check">✓</div><div class="perk-text">Natural-result philosophy — always</div></div>
-        <div class="perk-item"><div class="perk-check">✓</div><div class="perk-text">Serving Longmont & all of Boulder County</div></div>
-        <div class="perk-item"><div class="perk-check">✓</div><div class="perk-text">Call or text: <a href="tel:3032220081" style="color:var(--rose-light);font-weight:600;">303-222-0081</a></div></div>
+        <div class="perk-item"><div class="perk-check">✓</div><div class="perk-text">Serving Longmont &amp; all of Boulder County</div></div>
+        <div class="perk-item"><div class="perk-check">✓</div><div class="perk-text">Call or text: <a href="tel:3032220081" style="color:var(--gold-light);font-weight:600;">303-222-0081</a></div></div>
       </div>
     </div>
 
@@ -1360,7 +1455,7 @@ footer {
         <input type="hidden" name="source_site" value="botoxlongmont.com">
         <div class="form-group">
           <label>YOUR NAME *</label>
-          <input type="text" name="name" required placeholder="First & Last Name">
+          <input type="text" name="name" required placeholder="First &amp; Last Name">
         </div>
         <div class="form-group">
           <label>PHONE NUMBER *</label>
@@ -1404,7 +1499,7 @@ footer {
     <div class="cta-btns">
       <a href="tel:3032220081" class="btn-primary">📞 Call 303-222-0081</a>
       <a href="#contact" class="btn-dark">Request Consultation</a>
-      <a href="https://www.rewindthehandsoftime.com/aesthetic-services/botox/" target="_blank" rel="noopener" class="btn-outline" style="color:var(--charcoal);border-color:rgba(45,36,36,0.3);">Visit Full Site</a>
+      <a href="https://www.rewindthehandsoftime.com/aesthetic-services/botox/" target="_blank" rel="noopener" class="btn-outline" style="color:var(--navy);border-color:rgba(26,39,68,0.25);">Visit Full Site</a>
     </div>
   </div>
 </div>
@@ -1421,12 +1516,12 @@ footer {
       <h4>Services</h4>
       <ul>
         <li><a href="#services">Botox® Injections</a></li>
-        <li><a href="#services">Dermal & Lip Fillers</a></li>
+        <li><a href="#services">Dermal &amp; Lip Fillers</a></li>
         <li><a href="#services">PRP Therapy</a></li>
         <li><a href="#services">Microneedling</a></li>
         <li><a href="#services">Chemical Peels</a></li>
         <li><a href="#services">Permanent Makeup</a></li>
-        <li><a href="#services">Facials & Waxing</a></li>
+        <li><a href="#services">Facials &amp; Waxing</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -1450,11 +1545,10 @@ footer {
 <!-- SUCCESS MODAL -->
 <div class="modal-overlay" id="successModal">
   <div class="modal-box">
-    <div class="modal-icon">🌹</div>
+    <div class="modal-icon">✦</div>
     <h2>We Got Your Request!</h2>
     <p>Thank you for reaching out to Rewind Med Spa. Jessica or a team member will be in touch within one business day. We can't wait to help you look and feel your best.</p>
-    <p style="font-size:14px;margin-top:8px;"><strong>Need us sooner?</strong> Call <a href="tel:3032220081" style="color:var(--rose);">303-222-0081</a> right now.</p>
-    <br>
+    <p style="font-size:14px;margin-top:10px;color:var(--slate);font-weight:300;"><strong>Need us sooner?</strong> Call <a href="tel:3032220081" style="color:var(--gold-deep);">303-222-0081</a> right now.</p>
     <button class="modal-close" onclick="closeModal()">Close</button>
   </div>
 </div>
@@ -1522,7 +1616,6 @@ async function handleSubmit(e) {
   const btn = document.getElementById('submitBtn');
   const msg = document.getElementById('form-msg');
 
-  // Honeypot check
   if (form.querySelector('[name="_honey"]').value) return;
 
   btn.disabled = true;
@@ -1547,7 +1640,7 @@ async function handleSubmit(e) {
       throw new Error('Server error');
     }
   } catch (err) {
-    msg.innerHTML = '<span class="msg-error">Something went wrong. Please call us directly at <a href="tel:3032220081" style="color:var(--rose);">303-222-0081</a>.</span>';
+    msg.innerHTML = '<span class="msg-error">Something went wrong. Please call us directly at <a href="tel:3032220081" style="color:var(--gold-deep);">303-222-0081</a>.</span>';
     btn.textContent = 'Send My Request →';
     btn.disabled = false;
   }
@@ -1573,7 +1666,6 @@ const observer = new IntersectionObserver((entries) => {
 
 fadeEls.forEach(el => observer.observe(el));
 
-// Animate hero stat bars
 function animateHeroBars() {
   statBars.forEach(bar => {
     const target = bar.dataset.target;
@@ -1582,7 +1674,6 @@ function animateHeroBars() {
 }
 window.addEventListener('load', animateHeroBars);
 
-// Animate chart bars on scroll
 const chartObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting && !barsAnimated) {
